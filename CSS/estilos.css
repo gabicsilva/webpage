@@ -1,0 +1,38 @@
+body {
+  background-image : url('https://images.newscientist.com/wp-content/uploads/2019/07/02111520/gettyimages-157639696.jpg');
+  background-size:auto 100vh;
+  font-family: Arial;
+  height: 100vh
+}
+
+.menu{
+  background-color:#8e439c;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline pink;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style:none;
+}
+
+.site-title,
+.site-subtitle {
+  color: white;
+  text-align: center;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
