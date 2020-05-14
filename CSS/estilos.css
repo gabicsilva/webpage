@@ -1,24 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  background-image : url('https://images.newscientist.com/wp-content/uploads/2019/07/02111520/gettyimages-157639696.jpg');
+  background-color: white;
   background-size:auto 100vh;
   font-family: Arial;
+  font-size: 10px;
   height: 100vh
 }
-
-.menu{
-  background-color:#8e439c;
+/*se a tela tiver pelo menos 400 pixels vai carregar estes estilos*/
+/*break point*/
+/*em é relativo*/
+@media (min-width:400px) {
+  body {
+    font-size: 14px;
+  }
 }
 
-a {
-  color: white;
-  text-decoration: none;
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a:hover {
-   text-decoration: underline pink;
+.menu a{
+  display: block;
+  padding: 10px 20px;
 }
 
-.menu ul{
+.menu {
+  background-color:gray;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu ul {
   display: flex;
   justify-content: space-around;
 }
@@ -29,10 +49,28 @@ a:hover {
 
 .site-title,
 .site-subtitle {
-  color: white;
+  color: gray;
   text-align: center;
 }
 
+.site-title {
+  font-size: 4em;
+}
 .site-subtitle {
   font-style: italic;
+}
+
+.img-portfolio {
+  width:100px;
+  height: 100px;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline pink;
 }
